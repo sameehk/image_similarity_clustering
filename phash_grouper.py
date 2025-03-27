@@ -6,8 +6,8 @@ import imageio.v2 as imageio
 import scipy.spatial.distance
 from collections import defaultdict
 
-IMAGE_DIR = "C:\\Users\\Hp\\Documents\\codes\\similarity\\dataset"
-OUTPUT_DIR = "C:\\Users\\Hp\\Documents\\codes\\similarity\\grouped_images"
+IMAGE_DIR = "input dataset"
+OUTPUT_DIR = "output folder"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 image_files = [os.path.join(IMAGE_DIR, f) for f in os.listdir(IMAGE_DIR) if f.endswith(('.png', '.jpg', '.jpeg'))]
